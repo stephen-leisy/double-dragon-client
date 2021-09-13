@@ -41,4 +41,12 @@ export const LandingText = styled.p`
   top: 50%;
   left: 45%;
   font-size: 3rem;
+  font-family: 'Corben', cursive;
+  color: white;
+  -webkit-text-stroke: 1px black;
+
+  @media screen and (max-width: 500px) {
+    left: 2%;
+    top: 40%;
+  }
 `;
