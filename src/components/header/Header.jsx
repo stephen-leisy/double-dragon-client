@@ -10,9 +10,9 @@ import {
   NavLinks,
 } from './HeaderElements';
 
-export default function Header() {
+export default function Header({ headerShow }) {
   return (
-    <HeaderLimits>
+    <HeaderLimits headerShow={headerShow}>
       <HeaderContainer>
         <DDLogo src="/DD logo.png"></DDLogo>
         <MobileIcon>

@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
 
 export const HeaderLimits = styled.main`
-  background: transparent;
+  transition: 0.6s ease-in-out;
+  top: 0;
+  opacity: ${({ headerShow }) => (headerShow ? '100%' : '0')};
+  top: ${({ headerShow }) => (headerShow ? '0' : '-100%')};
+  background: rgba(0, 0, 0, 0.05);
   height: 30vh;
   width: 100vw;
   display: flex;
