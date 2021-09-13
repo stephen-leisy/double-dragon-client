@@ -1,0 +1,39 @@
+/* main {
+  position: absolute; */
+/* top: 0;
+  left: 0; */
+/* height: 1000px;
+  width: 1000px;
+} */
+main {
+}
+.wholePage {
+  background-image: url('https://www.foodrepublic.com/wp-content/uploads/2012/06/cocktail_tom_cruise_roger_donaldson_021_jpg_uqsg.jpg');
+  position: relative;
+  height: inherit;
+  background-size: cover;
+  /* background-attachment: scroll; */
+  /* background-size: ; */
+  background-repeat: repeat-x;
+  width: inherit;
+
+  overflow-x: hidden;
+}
+.doubleDragonWelcome {
+  background-color: lightcoral;
+  /* height: 600px;
+  background-image: url('https://www.foodrepublic.com/wp-content/uploads/2012/06/cocktail_tom_cruise_roger_donaldson_021_jpg_uqsg.jpg');
+  height: 100%;
+  background-size: 200vmin, scroll;
+  background-repeat: repeat-x;
+  width: 100%; */
+}
+
+@media (max-width: 800px) {
+  main {
+    background-size: 250vmin;
+  }
+}
+
+@media (max-height: 800px) {
+}
