@@ -38,9 +38,9 @@ export const TopImage = styled.img`
 
 export const LandingText = styled.p`
   position: absolute;
-  top: 50%;
-  left: 45%;
-  font-size: 3rem;
+  top: 40%;
+  left: 38%;
+  font-size: 4rem;
   font-family: 'Corben', cursive;
   color: white;
   -webkit-text-stroke: 1px black;
@@ -48,5 +48,6 @@ export const LandingText = styled.p`
   @media screen and (max-width: 500px) {
     left: 2%;
     top: 40%;
+    font-size: 3rem;
   }
 `;

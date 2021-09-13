@@ -61,6 +61,8 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     -webkit-text-stroke: 0.25px black;
     background: transparent;
+    color: white;
+    -webkit-text-stroke: 1px black;
   }
 
   @media screen and (max-width: 320px) {
