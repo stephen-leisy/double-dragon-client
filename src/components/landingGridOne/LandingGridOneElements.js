@@ -73,6 +73,11 @@ export const GridOneImage = styled.img`
     height: 60vh;
     width: 60vh;
   }
+
+  @media screen and (max-width: 1000px) {
+    height: 40vh;
+    width: 40vh;
+  }
 `;
 
 export const GridOneImage2 = styled.img`
@@ -86,6 +91,11 @@ export const GridOneImage2 = styled.img`
   @media screen and (max-width: 1300px) {
     height: 60vh;
     width: 60vh;
+  }
+
+  @media screen and (max-width: 1000px) {
+    height: 40vh;
+    width: 40vh;
   }
 `;
 
@@ -101,6 +111,11 @@ export const GridOneImage3 = styled.img`
     height: 60vh;
     width: 60vh;
   }
+
+  @media screen and (max-width: 1000px) {
+    height: 40vh;
+    width: 40vh;
+  }
 `;
 
 export const GridOneImage4 = styled.img`
@@ -114,5 +129,10 @@ export const GridOneImage4 = styled.img`
   @media screen and (max-width: 1300px) {
     height: 60vh;
     width: 60vh;
+  }
+
+  @media screen and (max-width: 1000px) {
+    height: 40vh;
+    width: 40vh;
   }
 `;
