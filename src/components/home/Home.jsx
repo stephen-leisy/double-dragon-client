@@ -6,6 +6,8 @@ import Header from '../header/Header';
 import Sidebar from '../mobileSidebar/MobileSidebar';
 import Landing from '../landing/Landing';
 import LandingGridOne from '../landingGridOne/LandingGridOne';
+import LandingMiddleImage from '../landingMiddleImage/LandingMiddleImage';
+import LandingGridTwo from '../landingGridTwo/LandingGridTwo';
 import FadeIn from 'react-fade-in';
 
 export default function Home() {
@@ -43,6 +45,8 @@ export default function Home() {
       />
       <Landing scroll={scrollY} />
       <LandingGridOne />
+      <LandingMiddleImage />
+      <LandingGridTwo />
     </FadeIn>
   );
 }

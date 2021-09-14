@@ -45,20 +45,3 @@ export const TopImage = styled.img`
     overflow: hidden;
   }
 `;
-
-export const LandingText = styled.p`
-  position: absolute;
-  top: 40%;
-  left: 38%;
-  font-size: 4rem;
-  font-family: 'Corben', cursive;
-  color: white;
-  -webkit-text-stroke: 1px black;
-  background: transparent;
-
-  @media screen and (max-width: 500px) {
-    left: 2%;
-    top: 40%;
-    font-size: 3rem;
-  }
-`;

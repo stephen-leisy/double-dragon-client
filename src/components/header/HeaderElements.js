@@ -7,6 +7,7 @@ export const HeaderLimits = styled.main`
   opacity: ${({ headerShow }) => (headerShow ? '100%' : '0')};
   top: ${({ headerShow }) => (headerShow ? '0' : '-100%')};
   background: rgba(0, 0, 0, 0.05);
+
   height: 30vh;
   width: 100vw;
   display: flex;
@@ -25,6 +26,7 @@ export const HeaderContainer = styled.div`
   padding: 20px 60px;
   z-index: 1;
   width: 100vw;
+  background: transparent;
 
   @media screen and (max-width: 780px) {
     padding: 20px 20px;
@@ -102,6 +104,7 @@ export const NavLinks = styled(RouterLink)`
   flex-direction: column;
   text-decoration: none;
   overflow-x: visible;
+  background: transparent;
   /* font-size: 1.1rem; */
   cursor: pointer;
   font-family: 'Corben', cursive;
