@@ -54,6 +54,10 @@ export const DDLogo = styled.img`
 
 export const LogoLink = styled(RouterLink)`
   cursor: pointer;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+  }
 `;
 
 export const MobileIcon = styled.div`
