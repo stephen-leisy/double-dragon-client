@@ -17,7 +17,7 @@ export const GridWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: purple 2px solid;
+  flex-direction: column;
 `;
 
 export const GridRow = styled.div`
@@ -60,7 +60,7 @@ export const GridImage = styled.img`
   margin-top: 40px;
   margin-right: 16px;
   display: block;
-  border: red 2px solid;
+  border: #e28134 4px solid;
   /* margin-left: 40px; */
   vertical-align: middle;
   width: 60vmin;
@@ -115,9 +115,9 @@ export const ImageOverlay = styled.div`
   }
 
   @media screen and (max-width: 600px) {
-    height: 89.5%;
-    width: 97.5%;
-    margin-top: 0;
+    height: 86.5%;
+    width: 100%;
+    margin-top: 20px;
   }
 `;
 
@@ -135,6 +135,21 @@ export const HoverText = styled.h2`
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
+`;
+
+export const PlaylistHeader = styled.h2`
+  font-family: 'Corben', cursive;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  font-size: 4rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
 `;
 
 // export const GridOneImage2 = styled.img`

@@ -10,12 +10,14 @@ import {
   GridLink,
   ImageOverlay,
   HoverText,
+  PlaylistHeader,
 } from './PlaylistsElements';
 
 export default function Playlists() {
   return (
     <PLaylistLimits>
       <GridWrapper>
+        <PlaylistHeader>Bring the vibes home</PlaylistHeader>
         <GridRow>
           <GridColumnLeft>
             <GridLink
