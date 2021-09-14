@@ -5,6 +5,7 @@ import useScrollPosition from '@react-hook/window-scroll';
 import Header from '../header/Header';
 import Sidebar from '../mobileSidebar/MobileSidebar';
 import Landing from '../landing/Landing';
+import LandingGridOne from '../landingGridOne/LandingGridOne';
 import FadeIn from 'react-fade-in';
 
 export default function Home() {
@@ -41,8 +42,7 @@ export default function Home() {
         toggle={toggle}
       />
       <Landing scroll={scrollY} />
-      <Landing />
-      <Landing />
+      <LandingGridOne />
     </FadeIn>
   );
 }
