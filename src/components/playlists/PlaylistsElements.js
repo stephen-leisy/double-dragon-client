@@ -13,7 +13,7 @@ export const GridWrapper = styled.div`
   height: 100%;
   width: 100%;
   margin: 0px 50px;
-  padding-top: 30px;
+  padding-top: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;

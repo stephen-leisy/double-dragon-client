@@ -11,7 +11,7 @@ export default function Menu() {
   const scrollY = useScrollPosition(30 /*frames per second*/);
 
   const scrollHeader = () => {
-    if (scrollY < 248) {
+    if (scrollY < 90) {
       setHeaderShow(true);
     } else if (scrollY < currentScroll) {
       setHeaderShow(true);
@@ -27,7 +27,6 @@ export default function Menu() {
   useEffect(() => {
     setCurrentScroll(scrollY);
     scrollHeader();
-    console.log(isOpen);
   }, [scrollY]);
   return (
     <>

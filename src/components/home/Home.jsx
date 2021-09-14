@@ -13,6 +13,7 @@ import FadeIn from 'react-fade-in';
 export default function Home() {
   const [currentScroll, setCurrentScroll] = useState(0);
   const [headerShow, setHeaderShow] = useState(true);
+  const [imageShow, setImageShow] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const scrollY = useScrollPosition(30 /*frames per second*/);
 
@@ -26,6 +27,14 @@ export default function Home() {
     }
   };
 
+  const scrollImage = () => {
+    if (scrollY > 538) {
+      setImageShow(true);
+    } else {
+      setImageShow(false);
+    }
+  };
+
   const toggle = () => {
     setIsOpen(!isOpen);
   };
@@ -33,6 +42,7 @@ export default function Home() {
   useEffect(() => {
     setCurrentScroll(scrollY);
     scrollHeader();
+    scrollImage();
   }, [scrollY]);
 
   return (
@@ -44,7 +54,7 @@ export default function Home() {
         toggle={toggle}
       />
       <Landing scroll={scrollY} />
-      <LandingGridOne />
+      <LandingGridOne imageShow={imageShow} />
       <LandingMiddleImage />
       <LandingGridTwo />
     </FadeIn>

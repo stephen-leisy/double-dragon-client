@@ -30,6 +30,8 @@ export const GridOneWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.9s ease-in-out;
+  opacity: ${({ imageShow }) => (imageShow ? '100%' : '0')};
 `;
 
 export const GridOneRow = styled.div`

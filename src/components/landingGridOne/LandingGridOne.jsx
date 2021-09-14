@@ -12,11 +12,11 @@ import {
   GridOneColumnRight,
 } from './LandingGridOneElements';
 
-export default function LandingGridOne() {
+export default function LandingGridOne({ imageShow }) {
   return (
     <>
       <GridOneLimits>
-        <GridOneWrapper>
+        <GridOneWrapper imageShow={imageShow}>
           <GridOneRow>
             <GridOneColumnLeft>
               <GridOneImage
