@@ -61,12 +61,6 @@ export const GridOneColumnRight = styled.div`
 `;
 
 export const GridOneImage = styled.img`
-  /* grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  border: 1px solid red; */
-  /* height: 40vh; */
   margin-top: 40px;
   margin-right: 16px;
   /* margin-left: 40px; */
@@ -74,50 +68,51 @@ export const GridOneImage = styled.img`
   width: 80vmin;
   height: 80vmin;
   object-fit: cover;
+
+  @media screen and (max-width: 1300px) {
+    height: 60vh;
+    width: 60vh;
+  }
 `;
 
 export const GridOneImage2 = styled.img`
-  /* grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  border: 1px solid red;
-  height: 50%; */
-  /* height: 40vh; */
   margin-top: 32px;
   margin-right: 16px;
   vertical-align: middle;
   width: 80vmin;
   height: 80vmin;
   object-fit: cover;
+
+  @media screen and (max-width: 1300px) {
+    height: 60vh;
+    width: 60vh;
+  }
 `;
 
 export const GridOneImage3 = styled.img`
-  /* grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  border: 1px solid red; */
-  /* height: 40vh; */
   margin-top: 40px;
   margin-left: 16px;
   vertical-align: middle;
   width: 80vmin;
   height: 80vmin;
   object-fit: cover;
+
+  @media screen and (max-width: 1300px) {
+    height: 60vh;
+    width: 60vh;
+  }
 `;
 
 export const GridOneImage4 = styled.img`
-  /* grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  border: 1px solid red; */
-  /* height: 40vh; */
   margin-top: 32px;
   margin-left: 16px;
   vertical-align: middle;
   width: 80vmin;
   height: 80vmin;
   object-fit: cover;
+
+  @media screen and (max-width: 1300px) {
+    height: 60vh;
+    width: 60vh;
+  }
 `;
