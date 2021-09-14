@@ -18,7 +18,16 @@ export const TopContainer = styled.div`
 export const TopImage = styled.img`
   width: 100vw;
   height: 100%;
+  object-fit: cover;
   overflow-x: hidden;
+
+  @media screen and (max-width: 1030px) {
+    height: 160vmin;
+    width: 160vmin;
+    object-fit: center;
+    overflow: hidden;
+    font-size: 3rem;
+  }
 
   @media screen and (max-width: 780px) {
     height: 100vh;
