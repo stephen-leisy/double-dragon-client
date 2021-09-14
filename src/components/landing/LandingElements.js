@@ -21,6 +21,7 @@ export const TopImage = styled.img`
   height: 100%;
   object-fit: cover;
   overflow-x: hidden;
+  z-index: 1;
 
   @media screen and (max-width: 1030px) {
     height: 160vmin;

@@ -1,42 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
-import CocktailList from '../cocktails/CocktailList';
+import React, { useEffect, useState } from 'react';
+import useScrollPosition from '@react-hook/window-scroll';
+import { MenuLimits, MenuWrapper, FoodImg, DrinkImg } from './MenuElements';
 import Header from '../header/Header';
-import { getAllCocktails } from '../services/authApi';
-import styles from './styles.css';
+import Sidebar from '../mobileSidebar/MobileSidebar';
 
 export default function Menu() {
-  const [loading, setLoading] = useState(false);
-  const [cocktails, setCocktailList] = useState([]);
-  const [windowWidth, setWidth] = useState('');
-  const history = useHistory();
+  const [currentScroll, setCurrentScroll] = useState(0);
+  const [headerShow, setHeaderShow] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  const scrollY = useScrollPosition(30 /*frames per second*/);
+
+  const scrollHeader = () => {
+    if (scrollY < 248) {
+      setHeaderShow(true);
+    } else if (scrollY < currentScroll) {
+      setHeaderShow(true);
+    } else {
+      setHeaderShow(false);
+    }
+  };
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
-    setLoading(true);
-    getAllCocktails()
-      .then(setCocktailList)
-      .finally(() => setLoading(false));
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
-    // Add event listener
-    window.addEventListener('resize', handleResize);
-    // Call handler right away so state gets updated with initial window size
-    handleResize();
-    // Remove event listener on cleanup
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+    setCurrentScroll(scrollY);
+    scrollHeader();
+    console.log(isOpen);
+  }, [scrollY]);
+  return (
+    <>
+      <MenuLimits>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Header
+          headerShow={headerShow}
+          scrollHeader={scrollHeader}
+          toggle={toggle}
+        />
 
-  console.log(cocktails);
-  return loading ? (
-    <h1>Loading...</h1>
-  ) : (
-    <main className={styles.menuPage}>
-      <Header windowSize={windowWidth} className={styles.menuHeader} />
-      <h1 className={styles.drinksHeader}>DRINKS</h1>
-      <section className={styles.menu}>
-        <CocktailList cocktails={cocktails} />
-      </section>
-    </main>
+        <MenuWrapper>
+          <FoodImg src="/food.png"></FoodImg>
+          <DrinkImg src="/drink.png"></DrinkImg>
+        </MenuWrapper>
+      </MenuLimits>
+    </>
   );
 }

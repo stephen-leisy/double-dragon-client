@@ -17,6 +17,7 @@ export const HeaderLimits = styled.main`
   top: 0;
   z-index: 10;
   font-size: 2rem;
+  background: transparent;
 `;
 
 export const HeaderContainer = styled.div`
@@ -24,7 +25,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 20px 60px;
-  z-index: 1;
+  z-index: 15;
   width: 100vw;
   background: transparent;
 
@@ -40,6 +41,7 @@ export const DDLogo = styled.img`
   display: flex;
   align-items: center;
   justify-self: flex-start;
+  background: transparent;
 
   @media screen and (max-width: 780px) {
     height: 20vmin;
@@ -48,6 +50,10 @@ export const DDLogo = styled.img`
   @media screen and (max-width: 320px) {
     height: 25vmin;
   }
+`;
+
+export const LogoLink = styled(RouterLink)`
+  cursor: pointer;
 `;
 
 export const MobileIcon = styled.div`
@@ -65,10 +71,12 @@ export const MobileIcon = styled.div`
     background: transparent;
     color: white;
     -webkit-text-stroke: 1px black;
+    z-index: 10;
   }
 
   @media screen and (max-width: 320px) {
     font-size: 2.6rem;
+    background: transparent;
   }
 `;
 

@@ -8,13 +8,16 @@ import {
   HeaderMenu,
   HeaderItem,
   NavLinks,
+  LogoLink,
 } from './HeaderElements';
 
 export default function Header({ headerShow, toggle }) {
   return (
     <HeaderLimits headerShow={headerShow}>
       <HeaderContainer>
-        <DDLogo src="/DD logo.png"></DDLogo>
+        <LogoLink to="/">
+          <DDLogo src="/DD logo.png"></DDLogo>
+        </LogoLink>
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>

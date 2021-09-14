@@ -28,11 +28,16 @@ export const Icon = styled.div`
   outline: none;
 `;
 
-export const CloseIcon = styled(FaTimes)``;
+export const CloseIcon = styled(FaTimes)`
+  background: transparent;
+`;
 
-export const SidebarWrapper = styled.div``;
+export const SidebarWrapper = styled.div`
+  background-color: #f8f0e3;
+`;
 
 export const SidebarMenu = styled.ul`
+  background-color: #f8f0e3;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 80px);
@@ -47,6 +52,7 @@ export const SidebarLink = styled(RouterLink)`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f8f0e3;
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
