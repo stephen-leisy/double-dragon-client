@@ -31,7 +31,7 @@ export const GridOneWrapper = styled.div`
   justify-content: center;
   align-items: center;
   transition: 0.9s ease-in-out;
-  opacity: ${({ imageShow }) => (imageShow ? '100%' : '0')};
+  opacity: ${({ imageShow }) => (imageShow ? '100%' : '20%')};
 `;
 
 export const GridOneRow = styled.div`
