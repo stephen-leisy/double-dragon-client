@@ -26,10 +26,10 @@ export default function Header({ headerShow, toggle }) {
             <NavLinks to="/menu">Menu</NavLinks>
           </HeaderItem>
           <HeaderItem>
-            <NavLinks to="">About</NavLinks>
+            <NavLinks to="/About">About</NavLinks>
           </HeaderItem>
           <HeaderItem>
-            <NavLinks>Playlist</NavLinks>
+            <NavLinks to="Playlists">Playlist</NavLinks>
           </HeaderItem>
         </HeaderMenu>
       </HeaderContainer>

@@ -39,8 +39,8 @@ export const TopImage = styled.img`
   }
 
   @media screen and (max-width: 320px) {
-    height: 100vh;
-    width: 600px;
+    height: 40vh;
+    width: 400px;
     object-fit: center;
     overflow: hidden;
   }

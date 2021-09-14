@@ -18,7 +18,7 @@ export const GridOneLimits = styled.main`
   }
 
   @media screen and (max-width: 600px) {
-    height: 170vh;
+    height: 200vh;
   }
 `;
 
@@ -94,6 +94,8 @@ export const GridOneImage = styled.img`
 
   @media screen and (max-width: 600px) {
     margin: 20px 0;
+    height: 40vh;
+    width: 40vh;
   }
 `;
 
@@ -122,6 +124,8 @@ export const GridOneImage2 = styled.img`
 
   @media screen and (max-width: 600px) {
     margin: 20px 0;
+    height: 40vh;
+    width: 40vh;
   }
 `;
 
@@ -150,6 +154,8 @@ export const GridOneImage3 = styled.img`
 
   @media screen and (max-width: 600px) {
     margin: 20px 0;
+    height: 40vh;
+    width: 40vh;
   }
 `;
 
@@ -178,5 +184,7 @@ export const GridOneImage4 = styled.img`
 
   @media screen and (max-width: 600px) {
     margin: 20px 0;
+    height: 40vh;
+    width: 40vh;
   }
 `;
