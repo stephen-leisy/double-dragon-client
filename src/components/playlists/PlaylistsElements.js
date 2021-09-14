@@ -117,6 +117,7 @@ export const ImageOverlay = styled.div`
   @media screen and (max-width: 600px) {
     height: 89.5%;
     width: 97.5%;
+    margin-top: 0;
   }
 `;
 
