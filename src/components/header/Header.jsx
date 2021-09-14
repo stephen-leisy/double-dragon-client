@@ -29,7 +29,7 @@ export default function Header({ headerShow, toggle }) {
             <NavLinks to="/About">About</NavLinks>
           </HeaderItem>
           <HeaderItem>
-            <NavLinks to="Playlists">Playlist</NavLinks>
+            <NavLinks to="/Playlists">Playlist</NavLinks>
           </HeaderItem>
         </HeaderMenu>
       </HeaderContainer>

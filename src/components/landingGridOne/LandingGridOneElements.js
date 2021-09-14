@@ -18,7 +18,7 @@ export const GridOneLimits = styled.main`
   }
 
   @media screen and (max-width: 600px) {
-    height: 200vh;
+    height: 190vh;
   }
 `;
 

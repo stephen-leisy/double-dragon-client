@@ -20,10 +20,10 @@ export default function MobileSidebar({ isOpen, toggle }) {
             <SidebarLink to="/menu" onClick={toggle}>
               Menu
             </SidebarLink>
-            <SidebarLink to="" onClick={toggle}>
+            <SidebarLink to="/About" onClick={toggle}>
               About
             </SidebarLink>
-            <SidebarLink to="/menu" onClick={toggle}>
+            <SidebarLink to="/Playlists" onClick={toggle}>
               Playlists
             </SidebarLink>
           </SidebarMenu>
