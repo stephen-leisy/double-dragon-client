@@ -9,8 +9,16 @@ export const GridOneLimits = styled.main`
   align-items: center;
   overflow-y: hidden;
 
+  @media screen and (max-width: 1000px) {
+    height: 140vh;
+  }
+
+  @media screen and (max-width: 780px) {
+    height: 100vh;
+  }
+
   @media screen and (max-width: 600px) {
-    height: 240vh;
+    height: 170vh;
   }
 `;
 
@@ -78,6 +86,15 @@ export const GridOneImage = styled.img`
     height: 40vh;
     width: 40vh;
   }
+
+  @media screen and (max-width: 780px) {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 20px 0;
+  }
 `;
 
 export const GridOneImage2 = styled.img`
@@ -96,6 +113,15 @@ export const GridOneImage2 = styled.img`
   @media screen and (max-width: 1000px) {
     height: 40vh;
     width: 40vh;
+  }
+
+  @media screen and (max-width: 780px) {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 20px 0;
   }
 `;
 
@@ -116,6 +142,15 @@ export const GridOneImage3 = styled.img`
     height: 40vh;
     width: 40vh;
   }
+
+  @media screen and (max-width: 780px) {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 20px 0;
+  }
 `;
 
 export const GridOneImage4 = styled.img`
@@ -134,5 +169,14 @@ export const GridOneImage4 = styled.img`
   @media screen and (max-width: 1000px) {
     height: 40vh;
     width: 40vh;
+  }
+
+  @media screen and (max-width: 780px) {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 20px 0;
   }
 `;
