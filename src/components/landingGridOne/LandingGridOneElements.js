@@ -18,7 +18,7 @@ export const GridOneLimits = styled.main`
   }
 
   @media screen and (max-width: 600px) {
-    height: 190vh;
+    height: 80vh;
   }
 `;
 
@@ -31,7 +31,12 @@ export const GridOneWrapper = styled.div`
   justify-content: center;
   align-items: center;
   transition: 0.9s ease-in-out;
-  opacity: ${({ imageShow }) => (imageShow ? '100%' : '20%')};
+  opacity: ${({ imageShow }) => (imageShow ? '100%' : '0%')};
+
+  @media screen and (max-width: 780px) {
+    margin: 0px 20px;
+    padding-top: 10px;
+  }
 `;
 
 export const GridOneRow = styled.div`
@@ -48,10 +53,10 @@ export const GridOneColumnLeft = styled.div`
 
   max-width: 50%;
 
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     flex: 100%;
     max-width: 100%;
-  }
+  } */
 `;
 
 export const GridOneColumnRight = styled.div`
@@ -64,10 +69,10 @@ export const GridOneColumnRight = styled.div`
   justify-content: center;
   /* padding: 0 20px; */
 
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     flex: 100%;
     max-width: 100%;
-  }
+  } */
 `;
 
 export const GridOneImage = styled.img`
@@ -95,9 +100,9 @@ export const GridOneImage = styled.img`
   }
 
   @media screen and (max-width: 600px) {
-    margin: 20px 0;
-    height: 40vh;
-    width: 40vh;
+    /* margin: 20px 0; */
+    height: 25vh;
+    width: 25vh;
   }
 `;
 
@@ -125,9 +130,9 @@ export const GridOneImage2 = styled.img`
   }
 
   @media screen and (max-width: 600px) {
-    margin: 20px 0;
-    height: 40vh;
-    width: 40vh;
+    /* margin: 20px 0; */
+    height: 25vh;
+    width: 25vh;
   }
 `;
 
@@ -155,9 +160,9 @@ export const GridOneImage3 = styled.img`
   }
 
   @media screen and (max-width: 600px) {
-    margin: 20px 0;
-    height: 40vh;
-    width: 40vh;
+    /* margin: 20px 0; */
+    height: 25vh;
+    width: 25vh;
   }
 `;
 
@@ -185,8 +190,8 @@ export const GridOneImage4 = styled.img`
   }
 
   @media screen and (max-width: 600px) {
-    margin: 20px 0;
-    height: 40vh;
-    width: 40vh;
+    /* margin: 20px 0; */
+    height: 25vh;
+    width: 25vh;
   }
 `;

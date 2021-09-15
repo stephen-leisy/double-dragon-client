@@ -61,14 +61,14 @@ export const RickRoll = styled.iframe`
   border: 15px solid #dcad37;
 
   @media screen and (max-width: 800px) {
-    width: 80%;
+    width: 90%;
   }
 `;
 
 export const MapLink = styled.button`
   padding-top: 10px;
   font-size: 1.6rem;
-  color: #eca481;
+  color: #f28d48;
   text-decoration: none;
   -webkit-text-stroke: 2px black;
 

@@ -5,6 +5,9 @@ export const LandingTopLimits = styled.main`
   width: 100vw;
   overflow-x: hidden;
   background: #cf7968;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const TopContainer = styled.div`
@@ -47,19 +50,24 @@ export const TopImage = styled.img`
   }
 `;
 
-export const LandingText = styled.p`
+export const LandingText = styled.p``;
+
+export const TextBox = styled.div`
   position: absolute;
-  top: 40%;
-  left: 38%;
-  font-size: 4rem;
+  top: 30%;
+  left: 34%;
+  font-size: 2.7rem;
   font-family: 'Corben', cursive;
-  color: white;
-  -webkit-text-stroke: 1px black;
+  color: #eca481;
+  -webkit-text-stroke: 2px black;
   background: transparent;
 
+  /* background-color: rgba(226, 129, 52, 0.65); */
+
   @media screen and (max-width: 500px) {
-    left: 2%;
+    left: 7%;
     top: 40%;
-    font-size: 3rem;
+    font-size: 1.4rem;
+    -webkit-text-stroke: 1px black;
   }
 `;
