@@ -28,7 +28,7 @@ export default function Home() {
   };
 
   const scrollImage = () => {
-    if (scrollY > 238) {
+    if (scrollY > 200) {
       setImageShow(true);
     } else {
       setImageShow(false);

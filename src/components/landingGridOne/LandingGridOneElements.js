@@ -101,6 +101,7 @@ export const GridOneImage = styled.img`
 
   @media screen and (max-width: 600px) {
     /* margin: 20px 0; */
+    margin-top: 0;
     height: 25vh;
     width: 25vh;
   }
@@ -161,6 +162,7 @@ export const GridOneImage3 = styled.img`
 
   @media screen and (max-width: 600px) {
     /* margin: 20px 0; */
+    margin-top: 0;
     height: 25vh;
     width: 25vh;
   }
