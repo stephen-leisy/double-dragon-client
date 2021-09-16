@@ -21,14 +21,14 @@ export const TopContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 780px) {
-    /* padding-right: 400px; */
+    height: 160vh;
   }
 `;
 
 export const TopImage = styled.div`
   background-image: url(${'https://www.foodrepublic.com/wp-content/uploads/2012/06/cocktail_tom_cruise_roger_donaldson_021_jpg_uqsg-700x496.jpg'});
-  width: 100vw;
-  height: 180vh;
+  width: 100%;
+  height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -56,6 +56,7 @@ export const TopImage = styled.div`
     /* height: 100vh;
     width: 900px; */
     background-position: 25% 50%;
+    height: 160vh;
     /* left: 30px; */
   }
 
@@ -100,5 +101,9 @@ export const TextBox = styled.div`
     width: 100%;
     -webkit-text-stroke: 1px black;
     background-color: none;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 0.8rem;
   }
 `;
