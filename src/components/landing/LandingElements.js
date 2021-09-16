@@ -104,7 +104,7 @@ export const TextBox = styled.div`
     background-color: none;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 360px) {
     font-size: 0.8rem;
   }
 `;
