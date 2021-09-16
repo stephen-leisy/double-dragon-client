@@ -30,6 +30,7 @@ export const TopImage = styled.img`
   background-attachment: fixed;
 
   @media screen and (max-width: 1030px) {
+    background-attachment: local;
     background-position: 25% 50%;
     /* height: 160vmin;
     width: 160vmin;
