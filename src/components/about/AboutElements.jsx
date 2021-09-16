@@ -30,7 +30,7 @@ export const AboutText = styled.div`
   width: 60%;
   font-family: 'Corben', cursive;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1rem;
   -webkit-text-stroke: 2px black;
   display: flex;
   justify-content: center;
@@ -67,7 +67,7 @@ export const RickRoll = styled.iframe`
 
 export const MapLink = styled.button`
   padding-top: 10px;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: #f28d48;
   text-decoration: none;
   -webkit-text-stroke: 2px black;

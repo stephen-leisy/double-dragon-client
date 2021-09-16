@@ -69,11 +69,11 @@ export const MobileIcon = styled.div`
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     cursor: pointer;
     -webkit-text-stroke: 0.25px black;
     background: transparent;
-    color: white;
+    /* color: white; */
     -webkit-text-stroke: 1px black;
     z-index: 10;
   }
@@ -134,5 +134,17 @@ export const NavLinks = styled(RouterLink)`
     -webkit-text-stroke: 1.7px black;
 
     text-decoration: underline white;
+  }
+`;
+
+export const SocialLink = styled.button`
+  color: white;
+  font-size: 1.8rem;
+  padding-top: 10px;
+
+  &:hover {
+    color: #dcad37;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.4);
   }
 `;

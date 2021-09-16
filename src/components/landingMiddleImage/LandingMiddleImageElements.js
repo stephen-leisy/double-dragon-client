@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import styled from 'styled-components';
 
 export const LandingTopLimits = styled.main`
@@ -18,30 +19,31 @@ export const TopContainer = styled.div`
 
 export const TopImage = styled.img`
   width: 100vw;
-  height: 100%;
-  object-fit: cover;
+  height: 100vh;
+  /* object-fit: cover; */
   overflow-x: hidden;
+  background-image: url(${'https://assets.mubicdn.net/images/notebook/post_images/26585/images-w1400.jpg?1536644601'});
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 
   @media screen and (max-width: 1030px) {
-    height: 160vmin;
+    background-position: 25% 50%;
+    /* height: 160vmin;
     width: 160vmin;
-    object-fit: center;
-    overflow: hidden;
-    font-size: 3rem;
+
+    font-size: 3rem; */
   }
 
   @media screen and (max-width: 780px) {
-    height: 60vh;
-    width: 400px;
-    object-fit: center;
-    overflow: hidden;
-    font-size: 3rem;
+    /* height: 100vh;
+    width: 900px; */
+    background-position: 60% 50%;
+    /* left: 30px; */
   }
 
   @media screen and (max-width: 320px) {
-    height: 40vh;
-    width: 400px;
-    object-fit: center;
-    overflow: hidden;
   }
 `;

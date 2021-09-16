@@ -1,5 +1,7 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
+import { ImInstagram } from 'react-icons/im';
 import {
   HeaderLimits,
   HeaderContainer,
@@ -9,6 +11,7 @@ import {
   HeaderItem,
   NavLinks,
   LogoLink,
+  SocialLink,
 } from './HeaderElements';
 
 export default function Header({ headerShow, toggle }) {
@@ -31,6 +34,13 @@ export default function Header({ headerShow, toggle }) {
           <HeaderItem>
             <NavLinks to="/Playlists">Playlist</NavLinks>
           </HeaderItem>
+          <SocialLink
+            as="a"
+            href="https://www.instagram.com/doubledragonpdx/?hl=en"
+            target="blank"
+          >
+            <ImInstagram />
+          </SocialLink>
         </HeaderMenu>
       </HeaderContainer>
     </HeaderLimits>

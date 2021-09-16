@@ -1,73 +1,104 @@
+/* eslint-disable max-len */
 import styled from 'styled-components';
 
 export const LandingTopLimits = styled.main`
   height: 100%;
   width: 100vw;
   overflow-x: hidden;
-  background: #cf7968;
+  /* background: #cf7968; */
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
 export const TopContainer = styled.div`
-  position: relative;
-  text-align: center;
+  /* position: relative;
+  text-align: center; */
+  width: 100vw;
+  height: 180vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 780px) {
     /* padding-right: 400px; */
   }
 `;
 
-export const TopImage = styled.img`
+export const TopImage = styled.div`
+  background-image: url(${'https://www.foodrepublic.com/wp-content/uploads/2012/06/cocktail_tom_cruise_roger_donaldson_021_jpg_uqsg-700x496.jpg'});
   width: 100vw;
-  height: 100%;
-  object-fit: cover;
+  height: 180vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 60%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* object-fit: cover;
   overflow-x: hidden;
-  z-index: 1;
+  z-index: 1; */
 
   @media screen and (max-width: 1030px) {
-    height: 160vmin;
+    background-position: 25% 50%;
+    /* height: 160vmin;
     width: 160vmin;
-    object-fit: center;
-    overflow: hidden;
-    font-size: 3rem;
+
+    font-size: 3rem; */
   }
 
   @media screen and (max-width: 780px) {
-    height: 100vh;
-    width: 900px;
-    object-fit: center;
-    overflow: hidden;
-    font-size: 3rem;
+    /* height: 100vh;
+    width: 900px; */
+    background-position: 25% 50%;
+    /* left: 30px; */
   }
 
   @media screen and (max-width: 320px) {
-    height: 100vh;
-    width: 600px;
-    object-fit: center;
-    overflow: hidden;
+    /* height: 100vh;
+    width: 600px; */
+    background-position: 25% 50%;
   }
 `;
 
-export const LandingText = styled.p``;
+export const LandingText = styled.p`
+  @media screen and (max-width: 780px) {
+    padding: 20px;
+  }
+`;
 
 export const TextBox = styled.div`
-  position: absolute;
-  top: 30%;
-  left: 34%;
+  height: 60%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   font-size: 2.7rem;
   font-family: 'Corben', cursive;
-  color: #eca481;
+  color: white;
   -webkit-text-stroke: 2px black;
   background: transparent;
 
-  /* background-color: rgba(226, 129, 52, 0.65); */
+  /* background-color: rgba(226, 129, 52, 0.15); */
+
+  @media screen and (max-width: 780px) {
+    font-size: 2rem;
+    width: 80%;
+    color: white;
+  }
 
   @media screen and (max-width: 500px) {
-    left: 7%;
-    top: 40%;
-    font-size: 1.4rem;
+    font-size: 1rem;
+
+    width: 100%;
     -webkit-text-stroke: 1px black;
+    background-color: none;
   }
 `;
