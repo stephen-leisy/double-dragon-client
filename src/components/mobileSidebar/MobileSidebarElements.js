@@ -72,3 +72,16 @@ export const SidebarLink = styled(RouterLink)`
     text-decoration: underline white;
   }
 `;
+
+export const SocialLink = styled.button`
+  color: #cf7968;
+  font-size: 1.8rem;
+  font-style: bold;
+  padding-top: 20px;
+
+  &:hover {
+    color: gold;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.4);
+  }
+`;

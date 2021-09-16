@@ -138,12 +138,13 @@ export const NavLinks = styled(RouterLink)`
 `;
 
 export const SocialLink = styled.button`
-  color: #cf7968;
+  color: white;
   font-size: 1.8rem;
+  font-style: bold;
   padding-top: 10px;
 
   &:hover {
-    color: white;
+    color: gold;
     transition: all 0.2s ease-in-out;
     transform: scale(1.4);
   }
