@@ -45,6 +45,13 @@ export const TopImage = styled.div`
   z-index: 1; */
 
   @media screen and (max-width: 1030px) {
+    width: 40%;
+    height: 40%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
     background-position: 25% 50%;
     /* height: 160vmin;
     width: 160vmin;
