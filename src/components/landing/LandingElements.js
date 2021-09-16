@@ -33,7 +33,7 @@ export const TopImage = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+  background-attachment: fixed;
   background-position: 50% 60%;
 
   display: flex;
