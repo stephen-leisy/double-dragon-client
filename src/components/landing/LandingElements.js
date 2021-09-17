@@ -46,7 +46,7 @@ export const TopImage = styled.div`
 
   @media screen and (max-width: 1030px) {
     background-position: 25% 50%;
-    background-attachment: local;
+    background-attachment: scroll;
     /* height: 160vmin;
     width: 160vmin;
 
